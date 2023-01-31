@@ -4,15 +4,7 @@ import ReactDOM from "react-dom/client";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 function Greeting() {
-  return (
-    <div>
-      <h1>This is a component</h1>
-      <p>Lorem 123</p>
-    </div>
-  );
+  const married = false;
+  return <h1>{married ? "I'm married" : "I am not married"}</h1>;
 }
-root.render(
-  <h1>
-    <Greeting />
-  </h1>
-);
+root.render(<Greeting />);
